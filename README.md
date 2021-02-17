@@ -19,6 +19,11 @@ last.request.cache.size=10
 2) В файле fintech-webhook-dummy-stub.properties заполнить свойство logging.config, в котором указать полный путь до xml-файла настроек для библиотеки логирования logback, например logging.config=file:C:/WORK/fintech_webhook_dummy_stub_config/fintech-webhook-dummy-stub-logback-config.xml
 3) В файле fintech-webhook-dummy-stub-logback-config.xml заполнить свойство "LOGS", в котором указать путь до папки, куда будут сохраняться логи, например <property name="LOGS" value="C:/WORK/fintech_webhook_dummy_stub_logz" />
 4) Запустить деплой со следующими параметрами 
+
  Контекст /fintech-webhook-dummy-stub
--Dfintech.webhook.dummy.stub.config.file.path=<полный путь до property-файла>, например -Dfintech.webhook.dummy.stub.config.file.path="file:C:\WORK\fintech_webhook_dummy_stub_config\fintech-webhook-dummy-stub.properties"
+
+-Dfintech.webhook.dummy.stub.config.file.path=<полный путь до property-файла>
+
+например -Dfintech.webhook.dummy.stub.config.file.path="file:C:\WORK\fintech_webhook_dummy_stub_config\fintech-webhook-dummy-stub.properties"
+
 5) Проверить доступность приложения можно по адресу http://<ip-address>:<port>/fintech-webhook-dummy-stub/health-check
