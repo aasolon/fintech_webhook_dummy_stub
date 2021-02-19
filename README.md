@@ -18,7 +18,7 @@ last.request.cache.size=10
 Деплой war на сервере приложений:
 1) Распаковать дистрибутив fintech_webhook_dummy_stub.war на WebSphere
 2) В файле fintech-webhook-dummy-stub.properties заполнить свойство logging.config, в котором указать полный путь до xml-файла настроек для библиотеки логирования logback, например logging.config=file:C:/WORK/fintech_webhook_dummy_stub_config/fintech-webhook-dummy-stub-logback-config.xml
-3) В файле fintech-webhook-dummy-stub-logback-config.xml заполнить свойство "LOGS", в котором указать путь до папки, куда будут сохраняться логи, например <property name="LOGS" value="C:/WORK/fintech_webhook_dummy_stub_logz" />
+3) В файле fintech-webhook-dummy-stub-logback-config.xml заполнить свойство "LOGS", в котором указать путь до папки, куда будут сохраняться логи, например \<property name="LOGS" value="C:/WORK/fintech_webhook_dummy_stub_logz" />
 4) Запустить деплой со следующими параметрами 
 
  * контекст /fintech-webhook-dummy-stub
